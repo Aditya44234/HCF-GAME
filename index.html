@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HCF Water Container Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>💧 Water Container - HCF Game 💧</h1>
+      <p class="subtitle">
+        Find the biggest bucket that can measure both containers!
+      </p>
+
+      <!-- Tutorial Section -->
+      <div class="tutorial" id="tutorial">
+        <div class="tutorial-box">
+          <h2>What is HCF?</h2>
+          <p><strong>HCF = Highest Common Factor</strong></p>
+          <p>
+            It means: The BIGGEST number that divides BOTH numbers perfectly!
+          </p>
+
+          <div class="example-box">
+            <h3>Example: Water Containers</h3>
+            <p>🪣 Container 1 has <strong>12 liters</strong></p>
+            <p>🪣 Container 2 has <strong>18 liters</strong></p>
+            <p>
+              Question: What is the biggest bucket size that can measure BOTH
+              containers completely?
+            </p>
+            <p class="answer">Answer: <strong>6 liters</strong> bucket!</p>
+            <p>Because:</p>
+            <p>✓ 12 ÷ 6 = 2 buckets (perfect!)</p>
+            <p>✓ 18 ÷ 6 = 3 buckets (perfect!)</p>
+          </div>
+
+          <button class="start-btn" id="startBtn">Let's Play! 🎮</button>
+        </div>
+      </div>
+
+      <!-- Game Screen -->
+      <div class="game-screen" id="gameScreen">
+
+      </div>
+      <!-- Two-column layout -->
+    </div>
+    <div class="game-box">
+      <!-- Left: Problem Area -->
+      <div class="problem-area">
+        <h2>Find the biggest bucket size!</h2>
+
+        <div class="containers">
+          <div class="container-wrapper">
+            <div class="water-container">
+              <div class="water" id="water1"></div>
+              <div class="container-label" id="label1">12 Liters</div>
+            </div>
+            <p class="container-name">Container A</p>
+          </div>
+
+          <div class="vs">VS</div>
+
+          <div class="container-wrapper">
+            <div class="water-container">
+              <div class="water" id="water2"></div>
+              <div class="container-label" id="label2">18 Liters</div>
+            </div>
+            <p class="container-name">Container B</p>
+          </div>
+        </div>
+
+        <div class="question">
+          <p id="questionText">
+            What is the BIGGEST bucket that can measure both containers
+            completely?
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Interaction Area -->
+      <div class="interaction-area">
+        <div class="buckets-section" id="bucketsSection">
+          <h3>Try These Bucket Sizes:</h3>
+          <div class="bucket-options" id="bucketOptions"></div>
+        </div>
+
+        <div class="help-section">
+          <button class="hint-btn" id="hintBtn">💡 Show Hint</button>
+          <div class="hint-box" id="hintBox"></div>
+        </div>
+
+        <div class="result" id="result"></div>
+        <button class="next-btn" id="nextBtn">Next Problem →</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
